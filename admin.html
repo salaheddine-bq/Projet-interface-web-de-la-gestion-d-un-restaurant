@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commandes Validées</title>
+    <style>
+        header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    background-color: #b30d0d;
+    padding: 55px;
+    position: relative; /* Permet de positionner des éléments absolument */
+}
+
+header img {
+    position: absolute; /* Permet de placer l'image à gauche */
+    left: 40px; /* Positionnement par rapport au bord gauche */
+    max-width: 125px; /* Taille ajustée */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 5%;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    border-style: groove;
+}
+
+header img:hover {
+    transform: scale(1.2);
+    opacity: 2.8;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+header h1:hover {
+    transform: scale(1.5);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    text-align: center;
+}  
+table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        table:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0.3, 0.3, 0.3, 0.3);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid black;
+            transition: background-color 0.3s ease;
+        }
+
+        th {
+            background-color: #b30d0d;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        tbody tr:hover td {
+            background-color: #f4f4f4;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tbody td {
+            font-size: 14px;
+            color: #333;
+        }      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ESPACE GOURMAND </h1>  
+        <img src="https://png.pngtree.com/png-vector/20230616/ourlarge/pngtree-kitchen-logo-vector-png-image_7152533.png" alt="">
+        <br>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+         </header>
+    
+    <h1>commande 1</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom de Produit</th>
+                <th>Quantité</th>
+                <th>Prix Total</th>
+                <th>Date</th>
+                <th>État de Commande</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Salade Marocaine</td>
+                <td>1</td>
+                <td>35</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>chicken burger</td>
+                <td>2</td>
+                <td>50</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>pizza fruit de mer</td>
+                <td>1</td>
+                <td>75</td>
+                <td>2025-01-18</td>
+                <td>En attente</td>
+            </tr>
+            <tr>
+                <td>soda</td>
+                <td>3</td>
+                <td>33</td>
+                <td>2025-01-18</td>
+                <td>En attente</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>commande 2</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom de Produit</th>
+                <th>Quantité</th>
+                <th>Prix Total</th>
+                <th>Date</th>
+                <th>État de Commande</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sandwich poulet</td>
+                <td>1</td>
+                <td>30</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>chicken burger</td>
+                <td>1</td>
+                <td>25</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>sidi ali 0,5L</td>
+                <td>2</td>
+                <td>18</td>
+                <td>2025-01-18</td>
+                <td>En attente</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>commande 3</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom de Produit</th>
+                <th>Quantité</th>
+                <th>Prix Total</th>
+                <th>Date</th>
+                <th>État de Commande</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>wrap mexicain</td>
+                <td>1</td>
+                <td>40</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>plat émincé de poulet </td>
+                <td>1</td>
+                <td>65</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>sandwich thon </td>
+                <td>1</td>
+                <td>25</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>plat Gigot d'agneau. </td>
+                <td>1</td>
+                <td>80</td>
+                <td>2025-01-18</td>
+                <td>Livré</td>
+            </tr>
+            <tr>
+                <td>soda</td>
+                <td>4</td>
+                <td>44</td>
+                <td>2025-01-18</td>
+                <td>En attente</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="orders-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ordersContainer = document.getElementById('orders-container');
+            const orders = JSON.parse(localStorage.getItem('orders')) || [];
+            const table = document.createElement('table');
+            table.innerHTML = `
+                <tr>
+                    <th>Nom du produit</th>
+                    <th>Quantité</th>
+                    <th>Prix total</th>
+                    <th>Date</th>
+                </tr>
+            `;
+    
+            orders.forEach(order => {
+                order.items.forEach(item => {
+                    const row = document.createElement('tr');
+              
+            });
+    
+            ordersContainer.appendChild(table);
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe5e5; /* Rouge clair pour le fond */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Couleur du texte */
+}
+
+h1 {
+    text-align: center;
+    color: #b30000; /* Rouge intense */
+    margin-top: 20px;
+}
+
+/* Conteneur principal */
+#admin-items {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #b30000; /* Bordure rouge */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tableau des produits */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #b30000; /* Bordures rouges */
+}
+
+th {
+    background-color: #b30000; /* Rouge intense */
+    color: #fff; /* Texte blanc */
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #ffe5e5; /* Rouge clair */
+}
+
+/* Bouton ou message vide */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #b30000;
+}
+
+/* Ajout d'un effet hover pour les lignes */
+tr:hover {
+    background-color: #f5c2c2; /* Rouge pastel */
+}
+
+/* Styles des boutons (si vous en ajoutez dans le futur) */
+button {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #800000; /* Rouge plus foncé */
+}

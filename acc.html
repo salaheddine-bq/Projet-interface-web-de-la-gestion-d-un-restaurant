@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace GOURMAND</title>
+    <link rel="stylesheet" href="acc.css">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="WhatsApp Video 2025-01-02 at 17.44.56.mp4">
+    </video>
+    <h1>ESPACE GOURMAND</h1>
+    <div class="button-container">
+        <button class="btn about">À propos</button>
+        <button class="btn client">Aller au Menu</button>
+        <button class="btn admin">Se connecter</button>
+    </div>
+    <script>
+        // Initialiser les identifiants
+        const adminEmail = "Barraq@gmail.com";
+        const adminPassword = "123123aaa";
+        
+        // Gestion des événements
+        document.addEventListener("DOMContentLoaded", () => {
+            const aboutButton = document.querySelector(".btn.about");
+            const menuButton = document.querySelector(".btn.client");
+            const loginButton = document.querySelector(".btn.admin");
+
+            // Rediriger vers rest.html
+            aboutButton.addEventListener("click", () => {
+                window.location.href = "rest.html";
+            });
+
+            // Rediriger vers page1.html
+            menuButton.addEventListener("click", () => {
+                window.location.href = "page 1.html";
+            });
+
+            // Gestion du clic sur le bouton "se connecter"
+            loginButton.addEventListener("click", () => {
+                const email = prompt("Entrez votre email :");
+                const password = prompt("Entrez votre mot de passe :");
+
+                if (email === adminEmail && password === adminPassword) {
+                    // Si les identifiants sont corrects
+                    window.location.href = "admin.html";
+                } else {
+                    // Si les identifiants sont incorrects
+                    alert("Erreur : Email ou mot de passe incorrect !");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

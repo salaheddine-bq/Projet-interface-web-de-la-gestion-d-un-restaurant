@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de notre Restaurant</title>
+    <style>
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    background-color: #b30d0d;
+    padding: 55px;
+    position: relative; /* Permet de positionner des éléments absolument */
+}
+header img {
+    position: absolute; /* Permet de placer l'image à gauche */
+    left: 40px; /* Positionnement par rapport au bord gauche */
+    max-width: 125px; /* Taille ajustée */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 5%;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    border-style: groove;
+}
+header img:hover {
+    transform: scale(1.2);
+    opacity: 2.8;
+}
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+header h1:hover {
+    transform: scale(1.5);
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: black;
+        }
+        section > div p {
+    font-size: 14px; /* Définit la taille du texte du paragraphe à 14px */
+    margin: 5px 0; /* Ajoute un espace de 5px en haut et en bas de chaque paragraphe */
+    color: black; 
+}
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .reviews {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .review {
+            flex: 1 1 calc(25% - 20px);
+            
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .review h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .review .stars {
+            color: #FFD700;
+            font-size: 1.5rem;
+        }
+footer {
+    background-color: #b30d0d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 34px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+    color: #0073e6;
+    transform: rotate(360deg); /* Légère rotation */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NOTRE RESTAURANT </h1>  
+        <img src="https://png.pngtree.com/png-vector/20230616/ourlarge/pngtree-kitchen-logo-vector-png-image_7152533.png" alt="">
+        <br>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+     </header>
+    <main>
+        <section id="intro">
+            <h2>L'Histoire de Notre Restaurant</h2>
+            <p>Notre restaurant est né d'une passion profonde pour la gastronomie. Fondé en 2005, il a été conçu pour offrir une expérience culinaire authentique et mémorable. Inspirés par les saveurs de notre région, nous avons commencé notre aventure dans une petite cuisine familiale. Grâce à l'amour de nos clients pour nos plats uniques, nous avons grandi pour devenir une référence locale.</p>
+        </section>
+        <section id="about">
+            <h2>À Propos de Nous</h2>
+            <p>Chez nous, la cuisine est un art et une passion. Nous croyons que chaque repas est une occasion de créer des souvenirs. Notre équipe est composée de chefs talentueux et de serveurs dévoués qui travaillent ensemble pour vous offrir une expérience exceptionnelle.</p>
+            <p>Nous utilisons uniquement des ingrédients frais et locaux pour garantir que chaque bouchée soit délicieuse et saine. Notre menu est varié, proposant des plats traditionnels, végétariens, et des créations modernes pour satisfaire tous les goûts.</p>
+        </section>
+        <section id="features">
+            <h2>Pourquoi Choisir Notre Restaurant ?</h2>
+            <ul>
+                <li><strong>Qualité Inégalée :</strong> Nous sélectionnons les meilleurs ingrédients pour créer des plats savoureux et authentiques.</li>
+                <li><strong>Service Exceptionnel :</strong> Notre personnel amical et attentif est toujours à votre disposition pour répondre à vos besoins.</li>
+                <li><strong>Ambiance Conviviale :</strong> Profitez d'un cadre chaleureux et accueillant, idéal pour toutes les occasions.</li>
+                <li><strong>Menu Varié :</strong> Des plats traditionnels aux créations modernes, il y en a pour tous les goûts.</li>
+                <li><strong>Engagement Écologique :</strong> Nous privilégions les produits locaux et les pratiques durables pour soutenir notre communauté et protéger l'environnement.</li>
+            </ul>
+            <p>Nous sommes fiers d'offrir bien plus qu'un simple repas : une expérience culinaire inoubliable qui vous fera revenir encore et encore.</p>
+        </section>
+        <section>
+            <h2>Avis de Nos Clients</h2>
+            <div class="reviews">
+                <div class="review">
+                    <h3>Bouchra taouss</h3>
+                    <p>“Un service exceptionnel et des plats délicieux. J'y retournerai sans hésiter !”</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <h3>Loubna Bennani</h3>
+                    <p>“Une ambiance conviviale et des ingrédients de qualité. Une expérience mémorable.”</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <h3>Anouar Berrada</h3>
+                    <p>“Le meilleur restaurant de la région. Les saveurs sont incroyables et uniques.”</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <h3>Hamouda Alami</h3>
+                    <p>“Des plats variés et un personnel chaleureux. Une adresse incontournable !”</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <h3>yacout bouchtaoui</h3>
+                    <p>“Des plats variés et un personnel chaleureux. Une adresse incontournable !”</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <h3>Sohayb Filali</h3>
+                    <p>“Des plats variés et un personnel chaleureux. Une adresse incontournable !”</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ESPACE GOURMAND - Tous droits réservés.</p>
+        <p>adresse : MAARIF , Rue boused ,n°3.</p>
+        <p>télephone : 06 34 37 07 53</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
